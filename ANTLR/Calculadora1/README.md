@@ -1,11 +1,11 @@
-# 📘 Calculadora ANTLR4 (Capítulo 4 – LabeledExpr)
+# Calculadora ANTLR4 del Capitulo 4 del libro
 
-Este proyecto es una implementación de una **calculadora** siguiendo el ejemplo del **Capítulo 4 del libro *The Definitive ANTLR4 Reference***.  
+Este proyecto es una implementación de una calculadora siguiendo el ejemplo del **Capítulo 4 del libro *The Definitive ANTLR4 Reference***.  
 Se utiliza **ANTLR4** para generar el lexer y parser a partir de la gramática `LabeledExpr.g4`, y un **Visitor (EvalVisitor.java)** para evaluar expresiones aritméticas con soporte de variables.
 
 ---
 
-## 📂 Archivos principales
+## Archivos principales
 
 - **LabeledExpr.g4** → gramática que define la calculadora.  
 - **EvalVisitor.java** → clase que evalúa las expresiones con la técnica *Visitor*.  
@@ -14,7 +14,7 @@ Se utiliza **ANTLR4** para generar el lexer y parser a partir de la gramática `
 
 ---
 
-## 🛠️ Funcionalidades
+## Funcionalidades
 
 - Operaciones básicas:  
   ➕ Suma, ➖ Resta, ✖️ Multiplicación, ➗ División.  
@@ -24,7 +24,7 @@ Se utiliza **ANTLR4** para generar el lexer y parser a partir de la gramática `
 
 ---
 
-## ▶️ Ejemplo de uso
+## Ejemplo de uso
 
 Archivo `t.expr`:
 
@@ -48,7 +48,7 @@ a+b*2
 
 ---
 
-## ⚡ Compilación y ejecución
+## Compilación y ejecución
 
 ### 1. Generar lexer y parser
 ```bash
