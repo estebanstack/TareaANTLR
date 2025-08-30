@@ -57,14 +57,15 @@ antlr4 -visitor -no-listener LabeledExpr.g4
 
 ### 2. Compilar
 ```bash
-javac -cp .:/ruta/a/antlr-4.13.1-complete.jar *.java
+javac Calc.java LabeledExpr*.java
 ```
-
-*(En Windows usar `;` en lugar de `:`)*
-
-### 3. Ejecutar
+### 3. Leer el archivo de prueba
 ```bash
-java -cp .:/ruta/a/antlr-4.13.1-complete.jar Calc t.expr
+cat t.expr
+```
+### 4. Ejecutar
+```bash
+java Calc t.expr
 ```
 
 ---
@@ -73,4 +74,4 @@ java -cp .:/ruta/a/antlr-4.13.1-complete.jar Calc t.expr
 
 - El `EvalVisitor.java` implementa un **Map<String, Integer> memory** que guarda los valores de las variables asignadas.  
 - Si se intenta usar una variable no definida, su valor es `0` por defecto.  
-- Este proyecto sirve como **base** para extender la calculadora con nuevas funciones (ejemplo: trigonometría, factorial, logaritmos, etc.).  
+
