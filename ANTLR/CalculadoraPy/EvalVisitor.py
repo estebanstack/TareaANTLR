@@ -37,7 +37,11 @@ class EvalVisitor(LabeledExprVisitor):
         right = self.visit(ctx.expr(1))
         if ctx.op.type == LabeledExprParser.MUL:
             return left * right
-        return int(left / right)
+        else:
+            if right == 0:
+                print("Error: división por cero")
+                return 0
+            return int(left / right)
 
     # expr op=('+'|'-') expr
     def visitAddSub(self, ctx:LabeledExprParser.AddSubContext):
